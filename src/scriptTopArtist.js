@@ -1,4 +1,4 @@
-const clientId = "a4e935c0639f4b09a25a59284de41436"; // Replace with your client ID
+const clientId = "c48e0be2ada84eb994ab6bae7233731b"; // Replace with your client ID
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
