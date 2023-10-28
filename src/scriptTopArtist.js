@@ -21,8 +21,8 @@ export async function redirectToAuthCodeFlow(clientId) {
     const params = new URLSearchParams();
     params.append("client_id", clientId);
     params.append("response_type", "code");
-    //params.append("redirect_uri", "http://localhost:5173/callback");
-    params.append("redirect_uri", "https://maikonkc.github.io/who_is_your_drugs/callback");
+    params.append("redirect_uri", "http://localhost:5173/callback");
+    //params.append("redirect_uri", "https://maikonkc.github.io/who_is_your_drugs/callback");
     params.append("scope", "user-top-read");//user-top-read
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", challenge);
