@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Who is your Drugs?</title>
+        <title>Who are your Drugs?</title>
+        <link rel="icon" href="src/icon.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="src/icon.png">
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
@@ -102,16 +105,16 @@
                 <div>
                 <section id="artists">
                   <ul>
-                    <li>caffeine: <span id="artist0"></span></li>
-                    <li>nicotine: <span id="artist1"></span></li>
-                    <li>amphetamine: <span id="artist2"></span></li>
-                    <li>cocaine: <span id="artist3"></span></li>
-                    <li>anticholinergic: <span id="artist4"></span></li>
-                    <li>marihuana: <span id="artist5"></span></li>
-                    <li>cactus: <span id="artist6"></span></li>
-                    <li>mushroom: <span id="artist7"></span></li>
-                    <li>ecstasy: <span id="artist8"></span></li>
-                    <li>LSD: <span id="artist9"></span></li>
+                    <li>caffeine: <p id="artist0"></p></li>
+                    <li>nicotine: <p id="artist1"></p></li>
+                    <li>amphetamine: <p id="artist2"></p></li>
+                    <li>cocaine: <p id="artist3"></p></li>
+                    <li>anticholinergic: <p id="artist4"></p></li>
+                    <li>marihuana: <p id="artist5"></p></li>
+                    <li>cactus: <p id="artist6"></p></li>
+                    <li>mushroom: <p id="artist7"></p></li>
+                    <li>ecstasy: <p id="artist8"></p></li>
+                    <li>LSD: <p id="artist9"></p></li>
                   </ul>
                 </section>
               </div>
@@ -129,7 +132,7 @@
           // Crie um link de download
           const link = document.createElement('a');
           link.href = imagemBase64;
-          link.download = 'whoisyourdrugs.png';
+          link.download = 'whoareyourdrugs.png';
 
           // Simule um clique no link para iniciar o download
           link.click();

@@ -21,7 +21,7 @@ export async function redirectToAuthCodeFlow(clientId) {
     const params = new URLSearchParams();
     params.append("client_id", clientId);
     params.append("response_type", "code");
-    params.append("redirect_uri", "https://maikonkc.github.io/who_is_your_drugs/callback");
+    params.append("redirect_uri", "https://maikonkc.github.io/who_are_your_drugs/callback");
     params.append("scope", "user-follow-read");
     params.append("code_challenge_method", "S256");
     params.append("code_challenge", challenge);
@@ -56,7 +56,7 @@ export async function getAccessToken(clientId, code) {
     params.append("client_id", clientId);
     params.append("grant_type", "authorization_code");
     params.append("code", code);
-    params.append("redirect_uri", "https://maikonkc.github.io/who_is_your_drugs/callback");
+    params.append("redirect_uri", "https://maikonkc.github.io/who_are_your_drugs/callback");
     params.append("code_verifier", verifier);
 
     const result = await fetch("https://accounts.spotify.com/api/token", {
